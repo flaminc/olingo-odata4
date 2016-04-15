@@ -18,10 +18,14 @@
  */
 package org.apache.olingo.commons.api.edm.provider;
 
+import java.io.Serializable;
+
 /**
  * The type Csdl navigation property binding.
  */
-public class CsdlNavigationPropertyBinding extends CsdlAbstractEdmItem {
+public class CsdlNavigationPropertyBinding extends CsdlAbstractEdmItem implements Serializable {
+
+  private static final long serialVersionUID = 9025549833158354046L;
 
   private String path;
 

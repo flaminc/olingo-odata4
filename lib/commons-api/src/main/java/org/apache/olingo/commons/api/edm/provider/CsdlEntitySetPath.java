@@ -18,10 +18,14 @@
  */
 package org.apache.olingo.commons.api.edm.provider;
 
+import java.io.Serializable;
+
 /**
  * The type Csdl entity set path.
  */
-public class CsdlEntitySetPath {
+public class CsdlEntitySetPath implements Serializable {
+
+  private static final long serialVersionUID = 5430586404584781052L;
 
   private String bindingParameter;
 

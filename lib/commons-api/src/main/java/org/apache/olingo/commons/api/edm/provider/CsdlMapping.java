@@ -20,11 +20,15 @@ package org.apache.olingo.commons.api.edm.provider;
 
 import org.apache.olingo.commons.api.edm.EdmMapping;
 
+import java.io.Serializable;
+
 /**
  * Content of this class does not appear within the CSDL metadata document. This class is used to perform server
  * internal mapping for edm primitive types to java types.
  */
-public class CsdlMapping implements EdmMapping {
+public class CsdlMapping implements EdmMapping, Serializable {
+
+  private static final long serialVersionUID = -1408679720223416546L;
 
   private String internalName;
   private Class<?> mappedJavaClass;

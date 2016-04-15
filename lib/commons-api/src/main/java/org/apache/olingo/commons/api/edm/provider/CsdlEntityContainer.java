@@ -18,6 +18,7 @@
  */
 package org.apache.olingo.commons.api.edm.provider;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -26,7 +27,9 @@ import org.apache.olingo.commons.api.edm.FullQualifiedName;
 /**
  * The type Csdl entity container.
  */
-public class CsdlEntityContainer extends CsdlAbstractEdmItem implements CsdlNamed, CsdlAnnotatable {
+public class CsdlEntityContainer extends CsdlAbstractEdmItem implements CsdlNamed, CsdlAnnotatable, Serializable {
+
+  private static final long serialVersionUID = -5102457443088667614L;
 
   private String name;
 

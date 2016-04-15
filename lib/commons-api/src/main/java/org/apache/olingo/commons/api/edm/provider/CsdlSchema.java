@@ -18,13 +18,16 @@
  */
 package org.apache.olingo.commons.api.edm.provider;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * The type Csdl schema.
  */
-public class CsdlSchema extends CsdlAbstractEdmItem implements CsdlAnnotatable {
+public class CsdlSchema extends CsdlAbstractEdmItem implements CsdlAnnotatable, Serializable {
+
+  private static final long serialVersionUID = -8893198468703446371L;
 
   private String namespace;
 

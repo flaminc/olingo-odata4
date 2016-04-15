@@ -18,6 +18,7 @@
  */
 package org.apache.olingo.commons.api.edm.provider;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -26,7 +27,9 @@ import org.apache.olingo.commons.api.edm.FullQualifiedName;
 /**
  * The type Csdl navigation property.
  */
-public class CsdlNavigationProperty extends CsdlAbstractEdmItem implements CsdlNamed, CsdlAnnotatable {
+public class CsdlNavigationProperty extends CsdlAbstractEdmItem implements CsdlNamed, CsdlAnnotatable, Serializable {
+
+  private static final long serialVersionUID = -5313680711869755813L;
 
   private String name;
 

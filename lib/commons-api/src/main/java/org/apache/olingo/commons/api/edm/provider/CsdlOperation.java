@@ -18,13 +18,16 @@
  */
 package org.apache.olingo.commons.api.edm.provider;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * The type Csdl operation.
  */
-public abstract class CsdlOperation extends CsdlAbstractEdmItem implements CsdlNamed, CsdlAnnotatable {
+public abstract class CsdlOperation extends CsdlAbstractEdmItem implements CsdlNamed, CsdlAnnotatable, Serializable {
+
+  private static final long serialVersionUID = 4061166716271686740L;
 
   /**
    * The Name.

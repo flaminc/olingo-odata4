@@ -18,6 +18,7 @@
  */
 package org.apache.olingo.commons.api.edm.provider;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -27,7 +28,9 @@ import org.apache.olingo.commons.api.edm.geo.SRID;
 /**
  * The type Csdl parameter.
  */
-public class CsdlParameter extends CsdlAbstractEdmItem implements CsdlNamed, CsdlAnnotatable {
+public class CsdlParameter extends CsdlAbstractEdmItem implements CsdlNamed, CsdlAnnotatable, Serializable {
+
+  private static final long serialVersionUID = 2981482279488707697L;
 
   private String name;
 

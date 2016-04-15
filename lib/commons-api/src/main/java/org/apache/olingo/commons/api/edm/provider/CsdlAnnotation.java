@@ -18,6 +18,7 @@
  */
 package org.apache.olingo.commons.api.edm.provider;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -26,7 +27,9 @@ import org.apache.olingo.commons.api.edm.provider.annotation.CsdlExpression;
 /**
  * Represents a CSDL annotation
  */
-public class CsdlAnnotation extends CsdlAbstractEdmItem implements CsdlAnnotatable {
+public class CsdlAnnotation extends CsdlAbstractEdmItem implements CsdlAnnotatable, Serializable {
+
+  private static final long serialVersionUID = -2646809094148243724L;
 
   private String term;
 

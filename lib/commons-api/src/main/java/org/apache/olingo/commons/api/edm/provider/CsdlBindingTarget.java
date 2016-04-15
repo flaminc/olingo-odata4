@@ -18,6 +18,7 @@
  */
 package org.apache.olingo.commons.api.edm.provider;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -26,7 +27,10 @@ import org.apache.olingo.commons.api.edm.FullQualifiedName;
 /**
  * The type Csdl binding target.
  */
-public abstract class CsdlBindingTarget extends CsdlAbstractEdmItem implements CsdlNamed, CsdlAnnotatable {
+public abstract class CsdlBindingTarget extends CsdlAbstractEdmItem implements CsdlNamed, CsdlAnnotatable,
+        Serializable {
+
+  private static final long serialVersionUID = -751421321332829944L;
 
   /**
    * The Name.

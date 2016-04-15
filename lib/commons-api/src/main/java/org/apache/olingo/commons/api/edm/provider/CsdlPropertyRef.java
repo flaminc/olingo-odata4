@@ -18,10 +18,14 @@
  */
 package org.apache.olingo.commons.api.edm.provider;
 
+import java.io.Serializable;
+
 /**
  * The type Csdl property ref.
  */
-public class CsdlPropertyRef extends CsdlAbstractEdmItem implements CsdlNamed {
+public class CsdlPropertyRef extends CsdlAbstractEdmItem implements CsdlNamed, Serializable {
+
+  private static final long serialVersionUID = 3071569401565382204L;
 
   private String name;
 

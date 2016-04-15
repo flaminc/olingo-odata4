@@ -18,6 +18,7 @@
  */
 package org.apache.olingo.commons.api.edm.provider;
 
+import java.io.Serializable;
 import java.util.List;
 
 import org.apache.olingo.commons.api.edm.FullQualifiedName;
@@ -25,7 +26,9 @@ import org.apache.olingo.commons.api.edm.FullQualifiedName;
 /**
  * The type Csdl entity set.
  */
-public class CsdlEntitySet extends CsdlBindingTarget {
+public class CsdlEntitySet extends CsdlBindingTarget implements Serializable {
+
+  private static final long serialVersionUID = 2627496727266181046L;
 
   // Default for EntitySets is true
   private boolean includeInServiceDocument = true;

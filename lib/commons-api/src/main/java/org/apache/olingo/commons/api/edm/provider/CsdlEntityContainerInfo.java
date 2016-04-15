@@ -18,12 +18,16 @@
  */
 package org.apache.olingo.commons.api.edm.provider;
 
+import java.io.Serializable;
+
 import org.apache.olingo.commons.api.edm.FullQualifiedName;
 
 /**
  * The type Csdl entity container info.
  */
-public class CsdlEntityContainerInfo {
+public class CsdlEntityContainerInfo implements Serializable {
+
+  private static final long serialVersionUID = 5799581642869961703L;
 
   private FullQualifiedName containerName;
 

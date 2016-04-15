@@ -18,13 +18,16 @@
  */
 package org.apache.olingo.commons.api.edm.provider;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * The type Csdl on delete.
  */
-public class CsdlOnDelete extends CsdlAbstractEdmItem implements CsdlAnnotatable {
+public class CsdlOnDelete extends CsdlAbstractEdmItem implements CsdlAnnotatable, Serializable {
+
+  private static final long serialVersionUID = 5348453171303594851L;
 
   private CsdlOnDeleteAction action = CsdlOnDeleteAction.None;
   

@@ -18,6 +18,7 @@
  */
 package org.apache.olingo.commons.api.edm.provider;
 
+import java.io.Serializable;
 import java.util.List;
 
 import org.apache.olingo.commons.api.edm.FullQualifiedName;
@@ -25,7 +26,9 @@ import org.apache.olingo.commons.api.edm.FullQualifiedName;
 /**
  * The type Csdl function import.
  */
-public class CsdlFunctionImport extends CsdlOperationImport {
+public class CsdlFunctionImport extends CsdlOperationImport implements Serializable {
+
+  private static final long serialVersionUID = -4989779748587093924L;
 
   private FullQualifiedName function;
 

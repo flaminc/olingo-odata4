@@ -18,6 +18,7 @@
  */
 package org.apache.olingo.commons.api.edm.provider;
 
+import java.io.Serializable;
 import java.util.List;
 
 import org.apache.olingo.commons.api.edm.FullQualifiedName;
@@ -25,7 +26,9 @@ import org.apache.olingo.commons.api.edm.FullQualifiedName;
 /**
  * The type Csdl entity type.
  */
-public class CsdlEntityType extends CsdlStructuralType {
+public class CsdlEntityType extends CsdlStructuralType implements Serializable {
+
+  private static final long serialVersionUID = 2234246207402659890L;
 
   private List<CsdlPropertyRef> key;
 

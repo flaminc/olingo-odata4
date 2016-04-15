@@ -18,12 +18,15 @@
  */
 package org.apache.olingo.commons.api.edm.provider;
 
+import java.io.Serializable;
 import java.util.List;
 
 /**
  * The type Csdl function.
  */
-public class CsdlFunction extends CsdlOperation {
+public class CsdlFunction extends CsdlOperation implements Serializable {
+
+  private static final long serialVersionUID = 7881750210040950032L;
 
   private boolean isComposable = false;
 

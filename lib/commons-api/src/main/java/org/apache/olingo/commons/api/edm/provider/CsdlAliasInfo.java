@@ -18,10 +18,14 @@
  */
 package org.apache.olingo.commons.api.edm.provider;
 
+import java.io.Serializable;
+
 /**
  * Represents an alias info CSDL item
  */
-public class CsdlAliasInfo {
+public class CsdlAliasInfo implements Serializable {
+
+  private static final long serialVersionUID = -4756448160006009229L;
 
   private String namespace;
 
