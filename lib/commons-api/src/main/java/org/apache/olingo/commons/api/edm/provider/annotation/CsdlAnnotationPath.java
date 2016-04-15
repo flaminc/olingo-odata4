@@ -18,10 +18,14 @@
  */
 package org.apache.olingo.commons.api.edm.provider.annotation;
 
+import java.io.Serializable;
+
 /**
  * Represents an annotation path
  */
-public class CsdlAnnotationPath extends CsdlDynamicExpression {
+public class CsdlAnnotationPath extends CsdlDynamicExpression implements Serializable {
+
+  private static final long serialVersionUID = -5156164513115488056L;
 
   private String value;
 

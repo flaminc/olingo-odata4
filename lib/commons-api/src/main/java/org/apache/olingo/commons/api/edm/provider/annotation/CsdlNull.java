@@ -18,6 +18,7 @@
  */
 package org.apache.olingo.commons.api.edm.provider.annotation;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -27,7 +28,9 @@ import org.apache.olingo.commons.api.edm.provider.CsdlAnnotation;
 /**
  * The edm:Null expression returns an untyped null value.
  */
-public class CsdlNull extends CsdlDynamicExpression implements CsdlAnnotatable {
+public class CsdlNull extends CsdlDynamicExpression implements CsdlAnnotatable, Serializable {
+
+  private static final long serialVersionUID = 2673153738475045801L;
 
   private List<CsdlAnnotation> annotations = new ArrayList<CsdlAnnotation>();
 

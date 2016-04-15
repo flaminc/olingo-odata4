@@ -18,7 +18,11 @@
  */
 package org.apache.olingo.commons.api.edm.provider.annotation;
 
-public class CsdlConstantExpression extends CsdlExpression {
+import java.io.Serializable;
+
+public class CsdlConstantExpression extends CsdlExpression implements Serializable {
+
+  private static final long serialVersionUID = 5951538084693265731L;
 
   private final ConstantExpressionType type;
   private String value;

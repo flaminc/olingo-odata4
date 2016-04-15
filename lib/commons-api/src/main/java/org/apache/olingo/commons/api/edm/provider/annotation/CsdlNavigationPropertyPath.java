@@ -18,12 +18,16 @@
  */
 package org.apache.olingo.commons.api.edm.provider.annotation;
 
+import java.io.Serializable;
+
 /**
  * The edm:NavigationPropertyPath expression provides a value for terms or term properties that specify the
  * built-in abstract type Edm.NavigationPropertyPath
  */
-public class CsdlNavigationPropertyPath extends CsdlDynamicExpression {
-  
+public class CsdlNavigationPropertyPath extends CsdlDynamicExpression implements Serializable {
+
+  private static final long serialVersionUID = -3381501895192449966L;
+
   private String value;
 
   /**

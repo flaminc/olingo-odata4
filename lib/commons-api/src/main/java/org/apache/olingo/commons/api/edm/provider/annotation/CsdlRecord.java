@@ -18,6 +18,7 @@
  */
 package org.apache.olingo.commons.api.edm.provider.annotation;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -28,7 +29,9 @@ import org.apache.olingo.commons.api.edm.provider.CsdlAnnotation;
  * The edm:Record expression enables a new entity type or complex type instance to be constructed.
  * A record expression contains zero or more edm:PropertyValue (See {@link CsdlRecord} )elements.
  */
-public class CsdlRecord extends CsdlDynamicExpression implements CsdlAnnotatable {
+public class CsdlRecord extends CsdlDynamicExpression implements CsdlAnnotatable, Serializable {
+
+  private static final long serialVersionUID = 8949086200127282173L;
 
   private String type;
   private List<CsdlPropertyValue> propertyValues = new ArrayList<CsdlPropertyValue>();

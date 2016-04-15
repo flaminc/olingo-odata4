@@ -18,6 +18,7 @@
  */
 package org.apache.olingo.commons.api.edm.provider.annotation;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -29,7 +30,9 @@ import org.apache.olingo.commons.api.edm.provider.CsdlAnnotation;
  * Represents an edm:Cast expression.
  * Casts the value obtained from its single child expression to the specified type
  */
-public class CsdlCast extends CsdlDynamicExpression implements CsdlAnnotatable {
+public class CsdlCast extends CsdlDynamicExpression implements CsdlAnnotatable, Serializable {
+
+  private static final long serialVersionUID = 6643898483131050326L;
 
   private String type;
   private Integer maxLength;

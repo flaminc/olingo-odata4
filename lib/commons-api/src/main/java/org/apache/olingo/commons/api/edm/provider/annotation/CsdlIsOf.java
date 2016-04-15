@@ -18,6 +18,7 @@
  */
 package org.apache.olingo.commons.api.edm.provider.annotation;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -29,7 +30,9 @@ import org.apache.olingo.commons.api.edm.provider.CsdlAnnotation;
  * The edm:IsOf expression evaluates a child expression and returns a Boolean value indicating whether
  * the child expression returns the specified type
  */
-public class CsdlIsOf extends CsdlDynamicExpression implements CsdlAnnotatable {
+public class CsdlIsOf extends CsdlDynamicExpression implements CsdlAnnotatable, Serializable {
+
+  private static final long serialVersionUID = -3047304007953022947L;
 
   private String type;
   private Integer maxLength;

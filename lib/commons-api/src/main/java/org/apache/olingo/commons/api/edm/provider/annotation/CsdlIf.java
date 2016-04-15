@@ -18,6 +18,7 @@
  */
 package org.apache.olingo.commons.api.edm.provider.annotation;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -27,7 +28,9 @@ import org.apache.olingo.commons.api.edm.provider.CsdlAnnotation;
 /**
  * Represents a edm:If expression
  */
-public class CsdlIf extends CsdlDynamicExpression implements CsdlAnnotatable {
+public class CsdlIf extends CsdlDynamicExpression implements CsdlAnnotatable, Serializable {
+
+  private static final long serialVersionUID = -8418743814451744748L;
 
   private CsdlExpression guard;
   private CsdlExpression _then;

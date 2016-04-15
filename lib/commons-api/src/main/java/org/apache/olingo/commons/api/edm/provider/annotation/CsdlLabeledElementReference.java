@@ -18,11 +18,15 @@
  */
 package org.apache.olingo.commons.api.edm.provider.annotation;
 
+import java.io.Serializable;
+
 /**
  * The edm:LabeledElementReference expression returns the value of an
  * edm:LabeledElement (see {@link CsdlLabeledElement}) expression.
  */
-public class CsdlLabeledElementReference extends CsdlDynamicExpression {
+public class CsdlLabeledElementReference extends CsdlDynamicExpression implements Serializable {
+
+  private static final long serialVersionUID = 2782155966454207300L;
 
   private String value;
 

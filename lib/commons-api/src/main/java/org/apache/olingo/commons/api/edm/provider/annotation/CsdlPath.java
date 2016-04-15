@@ -18,13 +18,17 @@
  */
 package org.apache.olingo.commons.api.edm.provider.annotation;
 
+import java.io.Serializable;
+
 /**
  *  The edm:Path expression enables a value to be obtained by traversing an object graph. 
  *  It can be used in annotations that target entity containers, entity sets, entity types, complex types, 
  *  navigation properties of structured types, and properties of structured types.
  */
-public class CsdlPath extends CsdlDynamicExpression {
-  
+public class CsdlPath extends CsdlDynamicExpression implements Serializable {
+
+  private static final long serialVersionUID = -5125141202580688942L;
+
   private String value;
 
   /**

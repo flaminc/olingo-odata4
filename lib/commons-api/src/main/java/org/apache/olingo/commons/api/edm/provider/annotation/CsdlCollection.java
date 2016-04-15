@@ -18,6 +18,7 @@
  */
 package org.apache.olingo.commons.api.edm.provider.annotation;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -26,7 +27,9 @@ import java.util.List;
  * The value calculated by the collection expression is the collection of the values calculated
  * by each of the child expressions.
  */
-public class CsdlCollection extends CsdlDynamicExpression {
+public class CsdlCollection extends CsdlDynamicExpression implements Serializable {
+
+  private static final long serialVersionUID = -2886059963950006051L;
 
   private List<CsdlExpression> items = new ArrayList<CsdlExpression>();
 

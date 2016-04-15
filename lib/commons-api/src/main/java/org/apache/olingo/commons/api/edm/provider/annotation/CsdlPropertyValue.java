@@ -18,6 +18,7 @@
  */
 package org.apache.olingo.commons.api.edm.provider.annotation;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -30,7 +31,9 @@ import org.apache.olingo.commons.api.edm.provider.CsdlAnnotation;
  * edm:Record expression (See {@link org.apache.olingo.commons.api.edm.annotation.EdmRecord}). 
  * The value is obtained by evaluating an expression.
  */
-public class CsdlPropertyValue extends CsdlAbstractEdmItem implements CsdlAnnotatable {
+public class CsdlPropertyValue extends CsdlAbstractEdmItem implements CsdlAnnotatable, Serializable {
+
+  private static final long serialVersionUID = 2699856854615376237L;
 
   private String property;
   private CsdlExpression value;

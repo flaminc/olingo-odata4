@@ -17,6 +17,7 @@
  * under the License.
  */package org.apache.olingo.commons.api.edm.provider.annotation;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -27,7 +28,9 @@ import org.apache.olingo.commons.api.edm.provider.CsdlAnnotation;
  * The edm:LabeledElement expression assigns a name to a child expression. The value of the child expression can
  * then be reused elsewhere with an edm:LabeledElementReference (See {@link CsdlLabeledElementReference}) expression.
  */
-public class CsdlLabeledElement extends CsdlDynamicExpression implements CsdlAnnotatable {
+public class CsdlLabeledElement extends CsdlDynamicExpression implements CsdlAnnotatable, Serializable {
+
+  private static final long serialVersionUID = -5155669203200853249L;
 
   private String name;
   private CsdlExpression value;

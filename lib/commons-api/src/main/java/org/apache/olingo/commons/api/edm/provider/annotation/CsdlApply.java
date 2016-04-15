@@ -18,13 +18,16 @@
  */
 package org.apache.olingo.commons.api.edm.provider.annotation;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
 import org.apache.olingo.commons.api.edm.provider.CsdlAnnotatable;
 import org.apache.olingo.commons.api.edm.provider.CsdlAnnotation;
 
-public class CsdlApply extends CsdlDynamicExpression implements CsdlAnnotatable {
+public class CsdlApply extends CsdlDynamicExpression implements CsdlAnnotatable, Serializable {
+
+  private static final long serialVersionUID = 7481675386648491711L;
 
   private String function;
   private List<CsdlExpression> parameters = new ArrayList<CsdlExpression>();
